@@ -17,6 +17,25 @@ window.onscroll = () => {
     navlist.classList.remove('active');
 }
 
+const circles = document.querySelectorAll('.circle');
+circles.forEach(elem=>{
+    var dots = elem.getAttribute("data-dots");
+    var marked = elem.getAttribute("data-percent");
+    var percent = Math.floor(dots*marked/100);
+    var points = "";
+    var rotate = 360 / dots;
+
+    for(let i = 0; i < dots ; i++){
+        points += `<div class="points" style="--i:${i}; --rot:${rotate}deg"></div>`;
+    }
+    elem.innerHTML = points;
+
+    const pointsMarked = elem.querySelectorAll('.points');
+    for(let i = 0; i < percent ; i++){
+        pointsMarked[i].classList.add('marked')
+    }
+})
+
 const translations = {
     "en": {"logo": "Developer <span>FULLSTACK</span>",
         "nav-home": "Home",
@@ -24,18 +43,17 @@ const translations = {
         "nav-services": "Services",
         "nav-portfolio": "Portfolio",
         "nav-contact": "Contact",
-        "contact-btn": "Contact me",
         "hero-hi": "Hi, There!",
         "hero-name": "I'm <span>Whole Nunes</span>",
         "hero-description": "I am a professional with a degree in mechatronic engineering and a focus on programming. I have two years of experience in the workforce, working as a Software Developer. I deal with various technologies, with Python and Flask being the main ones, along with MySQL, JavaScript, HTML, and CSS. Currently, I perform various functions, including implementing new systems, API integration for automated data collection and insertion, website development, networking, servers, and more. I am a curious and proactive individual, always seeking to address efficiency issues through the study of new technologies.",
         "hire-btn": "Hire me",
         "download-cv-btn": "Download CV",
         "about-title": "I'm <span>Developer</span> & Data Scientist",
-        "exp1": "Experience <span>2 Years</span>",
-        "exp2": "Specialty <span>Developer FullStack</span>",
-        "exp3": "Address <span>São Paulo, SP (08110-030)</span>",
-        "exp4": "Email <span>whole.nunes@gmail.com</span>",
-        "exp5": "Phone <span>+55 11 94912-8218</span>",
+        "exp1": "Experience: <span>2 Years</span>",
+        "exp2": "Specialty: <span>Developer FullStack</span>",
+        "exp3": "Address: <span>São Paulo, SP (08110-030)</span>",
+        "exp4": "Email: <span>whole.nunes@gmail.com</span>",
+        "exp5": "Phone: <span>+55 11 94912-8218</span>",
         "view-projects-btn": "View All Projects",
         "services-title": "My <span>Services</span>",
         "service1-title": "",
@@ -69,18 +87,17 @@ const translations = {
         "nav-services": "Serviços",
         "nav-portfolio": "Portfolio",
         "nav-contact": "Contato",
-        "contact-btn": "MeContate",
         "hero-hi": "Olá! Seja muito bem vindo(a, e)",
         "hero-name": "Me chamo <span>Whole</span>",
         "hero-description": "Sou um profissional formado em engenharia mecatrônica com especialização em programação. Tenho dois anos de experiência no mercado de trabalho, atuando como Desenvolvedor de Software. Trabalho com diversas tecnologias, sendo as principais o Python e o Flask, além do MySQL, JavaScript, HTML e CSS. Atualmente, desempenho várias funções, como a implementação de novos sistemas, integração via API para coleta e inserção automatizada de dados, desenvolvimento de sites, redes e servidores, entre outras atividades. Tenho uma mente curiosa e proativa, sempre em busca de soluções para melhorar a eficiência por meio do estudo de novas tecnologias.",
         "hire-btn": "Contrate-me",
         "download-cv-btn": "Baixar CV",
         "about-title": "Eu sou um <span>Desenvolvedor</span> & Cientista de Dados",
-        "exp1": "Experiência <span>2 anos</span>",
-        "exp2": "Especialidade <span>Developer FullStack</span>",
-        "exp3": "Endereço <span>São Paulo, SP (08110-030)</span>",
-        "exp4": "Email <span>whole.nunes@gmail.com</span>",
-        "exp5": "Celular <span>+55 11 94912-8218</span>",
+        "exp1": "Experiência: <span>2 anos</span>",
+        "exp2": "Especialidade: <span>Developer FullStack</span>",
+        "exp3": "Endereço: <span>São Paulo, SP (08110-030)</span>",
+        "exp4": "Email: <span>whole.nunes@gmail.com</span>",
+        "exp5": "Celular: <span>+55 11 94912-8218</span>",
         "view-projects-btn": "Ver Todos os Projetos",
         "services-title": "My <span>Services</span>",
         "service1-title": "",
@@ -90,6 +107,8 @@ const translations = {
         "service2-description": "",
         "service2-btn": "Download Now <i class='bx bx-right-arrow-alt'></i>",
         "service3-title": "",
+        "service3-description": "",
+        "service3-btn": "Download Now <i class='bx bx-right-arrow-alt'></i>",
         "portfolio-title": "My <span>Portfolio</span>",
         "portfolio1-category": "",
         "portfolio1-title": "",
@@ -115,7 +134,6 @@ const translations = {
     const navServices = translations[language]["nav-services"];
     const navPortfolio = translations[language]["nav-portfolio"];
     const navContact = translations[language]["nav-contact"];
-    const contactBtn = translations[language]["contact-btn"];
     const heroHi = translations[language]["hero-hi"];
     const heroName = translations[language]["hero-name"];
     const heroDescription = translations[language]["hero-description"];
@@ -161,7 +179,6 @@ const translations = {
     document.getElementById('nav-services').innerHTML = navServices;
     document.getElementById('nav-portfolio').innerHTML = navPortfolio;
     document.getElementById('nav-contact').innerHTML = navContact;
-    document.getElementById('contact-btn').innerHTML = contactBtn;
     document.getElementById('hero-hi').innerHTML = heroHi;
     document.getElementById('hero-name').innerHTML = heroName;
     document.getElementById('hero-description').innerHTML = heroDescription;

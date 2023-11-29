@@ -13,7 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<body>
+
+<body onload="changeLanguage('pt')">
     <!-- header -->
     <header>
         <a href="#" class="logo" id="logo">Developer <span>FULLSTACK</span></a>
@@ -27,13 +28,14 @@
         <ul class="navlist">
             <li><a href="#home" id="nav-home">Home</a></li>
             <li><a href="#about" id="nav-about">About</a></li>
+            <li><a href="#skills" id="nav-about">Skills</a></li>
             <li><a href="#services" id="nav-services">Services</a></li>
             <li><a href="#portfolio" id="nav-portfolio">Portfolio</a></li>
             <li><a href="#contact" id="nav-contact">Contact</a></li>
         </ul>
-        <div class="top-btn">
+        <!-- <div class="top-btn">
             <a href="#contact" class="h-btn" id="contact-btn">Contact me</a>
-        </div>
+        </div> -->
     </header>
     <!-- hero -->
     <section class="hero" id="home">
@@ -49,6 +51,9 @@
                 <a href="#" class="btn" id="hire-btn">Hire Me</a>
                 <a href="#" class="btn btn2" id="download-cv-btn">Download CV</a>
             </div>
+        </div>
+        <div class="hero-img">
+            <img src="img/51752a173cded2cb0a53baaf7a596d81.jpg">
         </div>
     </section>
     <!-- about -->
@@ -81,6 +86,119 @@
                 </p>
             </div>
             <a href="#" class="btn" id="view-projects-btn">View All Projects</a>
+        </div>
+    </section>
+    <!-- habilidades -->
+    <section class="skills" id="skills">
+        <div class="center-text">
+            <span>tecnico e profissional</span>
+            <h2>My Skills</h2>
+        </div>
+        <div class="skill-main">
+            <div class="skill-left">
+                <h3>Technical Skills</h3>
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>Python</p>
+                        <p>80%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="python"></span>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>Flask</p>
+                        <p>70%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="flask"></span>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>JavaScript</p>
+                        <p>70%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="javascript"></span>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>MySQL</p>
+                        <p>65%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="mysql"></span>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>HTML</p>
+                        <p>70%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="html"></span>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>CSS</p>
+                        <p>40%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="css"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-right">
+                <h3>Professional Skills</h3>
+                <div class="professional">
+                    <div class="skill-box">
+                        <div class="circle" data-dots="70" data-percent="70"></div>
+                        <div class="text">
+                            <big>70%</big>
+                            <small id="pressional-skill1">Team Work</small>
+                        </div>
+                    </div>
+                    <div class="skill-box">
+                        <div class="circle" data-dots="90" data-percent="90"></div>
+                        <div class="text">
+                            <big>90%</big>
+                            <small id="pressional-skill2">Proactivity</small>
+                        </div>
+                    </div>
+                    <div class="skill-box">
+                        <div class="circle" data-dots="80" data-percent="80"></div>
+                        <div class="text">
+                            <big>80%</big>
+                            <small id="pressional-skill3">Communication</small>
+                        </div>
+                    </div>
+                    <div class="skill-box">
+                        <div class="circle" data-dots="90" data-percent="90"></div>
+                        <div class="text">
+                            <big>90%</big>
+                            <small id="pressional-skill4">Problem Solving</small>
+                        </div>
+                    </div>
+                    <div class="skill-box">
+                        <div class="circle" data-dots="90" data-percent="90"></div>
+                        <div class="text">
+                            <big>90%</big>
+                            <small id="pressional-skill5">Adaptability</small>
+                        </div>
+                    </div>
+                    <div class="skill-box">
+                        <div class="circle" data-dots="70" data-percent="70"></div>
+                        <div class="text">
+                            <big>70%</big>
+                            <small id="pressional-skill6">Leadership</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <!-- services -->
@@ -199,7 +317,7 @@
                         <i class='bx bxl-github' ></i>
                     </div>
                 </div>
-                <h4 id="portfolio5-title">Website Development For Dark X</h4>
+                <h4 id="portfolio6-title">Website Development For Dark X</h4>
             </div>
         </div>
     </section>

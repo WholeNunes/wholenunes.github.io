@@ -10,10 +10,12 @@
 
 :root{
     --text-color: #fff;
-    --bg-color: #1b1f24;
+    --bg-color: #101111;
+    --bg-dark-color: #1b1f24;
     --second-bg-color: #22282f;
     --main-color: #13bbff;
     --other-color: #c3cad5;
+    --text-neon-color: 0 0 10px #13bbff, 0 0 20px #13bbff, 0 0 30px #13bbff;;
     
     --h1-font: 4.5rem;
     --h2-font: 2.9rem;
@@ -91,7 +93,7 @@ span{
     display: none;
 }
 
-.h-btn{
+/* .h-btn{
     display: inline-block;
     padding: 11px 26px;
     background: transparent;
@@ -107,7 +109,7 @@ span{
     color: var(--bg-color);
     box-shadow: 0 0 20px var(--main-color);
     transform: scale(1.1);
-}
+} */
 
 section{
     padding: 110px 16% 90px;
@@ -116,14 +118,19 @@ section{
 .hero {
     height: 100vh;
     width: 100%;
-    /* background: url(''); */
+    background: #000000;
     background-position: top right;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
-
+.hero-img img{
+    height: auto;
+    left: 300px;
+    max-width: 540px;
+    object-fit: cover;
+}
 .main-content h4{
     font-size: 1.6rem;
 }
@@ -165,7 +172,6 @@ section{
 .social i:hover{
     transform: scale(1.1);
     box-shadow: 0 0 20px var(--main-color);
-
 }
 
 .btn{
@@ -178,7 +184,6 @@ section{
     font-size: 15px;
     font-weight: 600;
     transition: all .50s ease;
-
 }
 .btn:hover{
     background: transparent;
@@ -191,7 +196,6 @@ section{
     border: 2px solid var(--main-color);
     margin-left: 15px;
     transition: all .50s ease;
-
 }
 .btn2:hover{
     background: var(--main-color);
@@ -441,6 +445,193 @@ form .send-btn:hover{
     font-size: 27px;
 }
 
+.skills{
+    background: #000000;
+}
+.skill-main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+}
+
+.skill-bar{
+    margin-bottom: 2.3rem;
+}
+
+.skill-main h3{
+    margin-bottom: 2rem;
+    font-size: var(--h2-font);
+    text-align: center;
+}
+
+.skill-left .skill-bar .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+.skill-left .skill-bar .bar{
+    width: 100%;
+    height: 10px;
+    background-color: var(--other-color);
+    margin-top: 10px;
+    border-radius: 25px;
+    position: relative;
+}
+
+
+.skill-bar .bar span{
+    width: 50%;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    background: var(--text-neon-color);
+    border-radius: 25px;
+    box-shadow: var(--text-neon-color);
+}
+.skill-bar .bar .html{
+    width: 70%;
+    animation: html 6s;
+}
+.skill-bar .bar .python{
+    width: 80%;
+    animation: python 2s;
+}
+.skill-bar .bar .css{
+    width: 40%;
+    animation: css 7s;
+}
+.skill-bar .bar .javascript{
+    width: 70%;
+    animation: javascript 4s;
+}
+.skill-bar .bar .flask{
+    width: 70%;
+    animation: flask 3s;
+}
+.skill-bar .bar .mysql{
+    width: 65%;
+    animation: mysql 5s;
+}
+
+.professional{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.skill-box{
+    position: relative;
+    margin: 10px 0;
+    flex: 1 1 15rem;
+
+}
+.skill-box .text{
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.skill-box .text big{
+    font: 400;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.box .text small{
+    display: block;
+    font-weight: 600;
+}
+.circle{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle .points{
+    width: 2px;
+    height: 10px;
+    background-color: var(--other-color);
+    position: absolute;
+    border-radius: 3px;
+    transform: rotate(calc(var(--i)*var(--rot))) translateY(-45px);
+}
+
+.points.marked{
+    animation: glow 0.04s linear forwards;
+        animation-delay: calc(var(--i)*0.05s);
+}
+
+/* keyframes */
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 40%;
+    }
+}
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes python{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes mysql{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 65%;
+    }
+}
+@keyframes flask{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+@keyframes glow{
+    0%{
+        background: var(--other-color);
+        box-shadow: none;
+    }
+    100%{
+        background: var(--main-color);
+        box-shadow: var(--text-neon-color);
+    }
+}   
+
+
+
+
+
+
 @media (max-width: 1700px){
     header{
         padding: 20px 8%;
@@ -544,13 +735,18 @@ form .send-btn:hover{
     .navlist.active{
         right: 0;
     }
+    .skill-main{
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 680px){
     .main-content p{
         width: 100%;
     }
-
+    .hero-img{
+        display: none;
+    }
 }
 
 @media (max-width: 470px){
