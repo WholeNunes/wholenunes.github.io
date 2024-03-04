@@ -220,6 +220,7 @@ header.sticky{
     height: 530px;
     max-width: 540px;
     border-radius: 50%;
+    object-position: center top;
     object-fit: cover;
     border: 7px solid var(--main-color);
     box-shadow: 0 0 20px var(--main-color)
@@ -564,6 +565,42 @@ form .send-btn:hover{
 .points.marked{
     animation: glow 0.04s linear forwards;
         animation-delay: calc(var(--i)*0.05s);
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    overflow-y: scroll
+}
+.popup p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+.popup h1 {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.popup img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.popup .image-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
 /* keyframes */

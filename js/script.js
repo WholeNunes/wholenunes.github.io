@@ -36,6 +36,37 @@ circles.forEach(elem=>{
     }
 })
 
+// Função para exibir o popup
+function exibirPopup(popup) {
+    console.log(popup.id)
+    if(popup.id === 'service1-btn') {
+        document.getElementById('popup1').style.display = 'block';
+    } else if(popup.id === 'service2-btn') {
+        document.getElementById('popup2').style.display = 'block';
+    } else {
+        document.getElementById('popup3').style.display = 'block';
+    }
+}
+
+// Função para fechar o popup
+function fecharPopup(popupclose) {
+    document.getElementById(popupclose).style.display = 'none';
+}
+
+// Adiciona um evento de clique ao link
+document.getElementById('service1-btn').addEventListener('click', function(event) {
+    event.preventDefault(); // Impede o comportamento padrão do link
+    exibirPopup(this); // Exibe o popup ao clicar no link
+});
+document.getElementById('service2-btn').addEventListener('click', function(event) {
+    event.preventDefault(); // Impede o comportamento padrão do link
+    exibirPopup(this); // Exibe o popup ao clicar no link
+});
+document.getElementById('service3-btn').addEventListener('click', function(event) {
+    event.preventDefault(); // Impede o comportamento padrão do link
+    exibirPopup(this); // Exibe o popup ao clicar no link
+});
+
 const translations = {
     "en": {"logo": "Developer <span>FULLSTACK</span>",
         "nav-home": "Home",
@@ -51,20 +82,20 @@ const translations = {
         "about-title": "I'm <span>Developer</span> & Data Scientist",
         "exp1": "Experience: <span>2 Years</span>",
         "exp2": "Specialty: <span>Developer FullStack</span>",
-        "exp3": "Address: <span>São Paulo, SP (08110-030)</span>",
+        "exp3": "Address: <span>Santana de Parnaiba, SP (06525-060)</span>",
         "exp4": "Email: <span>whole.nunes@gmail.com</span>",
         "exp5": "Phone: <span>+55 11 94912-8218</span>",
         "view-projects-btn": "View All Projects",
         "services-title": "My <span>Services</span>",
-        "service1-title": "",
-        "service1-description": "",
-        "service1-btn": "Download Now <i class='bx bx-right-arrow-alt'></i>",
-        "service2-title": "",
-        "service2-description": "",
-        "service2-btn": "Download Now <i class='bx bx-right-arrow-alt'></i>",
-        "service3-title": "",
-        "service3-description": "",
-        "service3-btn": "Download Now <i class='bx bx-right-arrow-alt'></i>",
+        "service1-title": "Inventory control",
+        "service1-description": "Inventory control system developed in VBA and integrated with the ERP Tiny system, so that you have stock in real time and can add or delete products directly from an Excel spreadsheet.",
+        "service1-btn": "See more <i class='bx bx-right-arrow-alt'></i>",
+        "service2-title": "Sales Portal",
+        "service2-description": "It is an access portal for salespeople from a specific company, where they have various accesses and functionalities, from budget generation to integration with ERP via REST API.",
+        "service2-btn": "See more  <i class='bx bx-right-arrow-alt'></i>",
+        "service3-title": "Integrations",
+        "service3-description": "I carried out several integrations to automate functions, among them I integrated everything from the following companies: Itaú, PayPal, MercadoPago, Jamef, Tiny, Pipefy, RDStation, Whatsapp, Instagram. More focused on payment methods.",
+        "service3-btn": "See more  <i class='bx bx-right-arrow-alt'></i>",
         "portfolio-title": "My <span>Portfolio</span>",
         "portfolio1-category": "",
         "portfolio1-title": "",
@@ -72,12 +103,6 @@ const translations = {
         "portfolio2-title": "",
         "portfolio3-category": "",
         "portfolio3-title": "",
-        "portfolio4-category": "",
-        "portfolio4-title": "",
-        "portfolio5-category": "",
-        "portfolio5-title": "",
-        "portfolio6-category": "",
-        "portfolio6-title": "",
         "contact-title": "Contact <span>Me</span>",
         "footer-copyright": "",
     },
@@ -90,39 +115,33 @@ const translations = {
         "hero-hi": "Olá! Seja muito bem vindo(a, e)",
         "hero-name": "Me chamo <span>Whole</span>",
         "hero-description": "Sou um profissional formado em engenharia mecatrônica com especialização em programação. Tenho dois anos de experiência no mercado de trabalho, atuando como Desenvolvedor de Software. Trabalho com diversas tecnologias, sendo as principais o Python e o Flask, além do MySQL, JavaScript, HTML e CSS. Atualmente, desempenho várias funções, como a implementação de novos sistemas, integração via API para coleta e inserção automatizada de dados, desenvolvimento de sites, redes e servidores, entre outras atividades. Tenho uma mente curiosa e proativa, sempre em busca de soluções para melhorar a eficiência por meio do estudo de novas tecnologias.",
-        "hire-btn": "Contrate-me",
+        "hire-btn": "Contate-me",
         "download-cv-btn": "Baixar CV",
         "about-title": "Eu sou um <span>Desenvolvedor</span> & Cientista de Dados",
         "exp1": "Experiência: <span>2 anos</span>",
         "exp2": "Especialidade: <span>Developer FullStack</span>",
-        "exp3": "Endereço: <span>São Paulo, SP (08110-030)</span>",
+        "exp3": "Endereço: <span>Santana de Parnaiba, SP (06525-060)</span>",
         "exp4": "Email: <span>whole.nunes@gmail.com</span>",
         "exp5": "Celular: <span>+55 11 94912-8218</span>",
         "view-projects-btn": "Ver Todos os Projetos",
-        "services-title": "My <span>Services</span>",
-        "service1-title": "",
-        "service1-description": "",
-        "service1-btn": "Download Now <i class='bx bx-right-arrow-alt'></i>",
-        "service2-title": "",
-        "service2-description": "",
-        "service2-btn": "Download Now <i class='bx bx-right-arrow-alt'></i>",
-        "service3-title": "",
-        "service3-description": "",
-        "service3-btn": "Download Now <i class='bx bx-right-arrow-alt'></i>",
-        "portfolio-title": "My <span>Portfolio</span>",
+        "services-title": "Meus <span>Serviços</span>",
+        "service1-title": "Controle de Estoque",
+        "service1-description": "Sistema de controle de estoque desenvolvido em VBA e integrado com o sistema ERP Tiny, de modo que tenha o estoque em tempo real e consiga adicionar ou excluir produtos direto de uma planilha excel.",
+        "service1-btn": "Saiba mais <i class='bx bx-right-arrow-alt'></i>",
+        "service2-title": "Portal de Vendas",
+        "service2-description": "Trata-se de um portal de acesso a vendedores de determinada empresa, onde possuem diversos acessos e funcionalidades, desde a geração do orçamento até a integração com ERP via API REST",
+        "service2-btn": "Saiba mais <i class='bx bx-right-arrow-alt'></i>",
+        "service3-title": "Integrações",
+        "service3-description": "Realizei diversas integrações para automatização de funções, dentre elas integrei tudo das seguintes empresas: Itaú, PayPal, MercadoPago, Jamef, Tiny, Pipefy, RDStation, Whatsapp, Instagram. Mais focado em formas de pagamentos.",
+        "service3-btn": "Saiba mais <i class='bx bx-right-arrow-alt'></i>",
+        "portfolio-title": "Meu <span>Portfolio</span>",
         "portfolio1-category": "",
         "portfolio1-title": "",
         "portfolio2-category": "",
         "portfolio2-title": "",
         "portfolio3-category": "",
         "portfolio3-title": "",
-        "portfolio4-category": "",
-        "portfolio4-title": "",
-        "portfolio5-category": "",
-        "portfolio5-title": "",
-        "portfolio6-category": "",
-        "portfolio6-title": "",
-        "contact-title": "Contact <span>Me</span>",
+        "contact-title": "<span>Contato</span>",
         "footer-copyright": "",
     }
   };
