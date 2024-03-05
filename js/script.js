@@ -86,6 +86,16 @@ const translations = {
         "exp4": "Email: <span>whole.nunes@gmail.com</span>",
         "exp5": "Phone: <span>+55 11 94912-8218</span>",
         "view-projects-btn": "View All Projects",
+        "myhabilitiessubtitle": "Technical and Profissional",
+        "myhabilitiestitle": "My Skills",
+        "technicalskills": "Technical",
+        "profissionalskillstitle": "Professional",
+        "pressional-skill1": "Team Work",
+        "pressional-skill2": "Proactivity",
+        "pressional-skill3": "Communication",
+        "pressional-skill4": "Problem Solving",
+        "pressional-skill5": "Adaptability",
+        "pressional-skill6": "Leadership",
         "services-title": "My <span>Services</span>",
         "service1-title": "Inventory control",
         "service1-description": "Inventory control system developed in VBA and integrated with the ERP Tiny system, so that you have stock in real time and can add or delete products directly from an Excel spreadsheet.",
@@ -105,6 +115,10 @@ const translations = {
         "portfolio3-title": "",
         "contact-title": "Contact <span>Me</span>",
         "footer-copyright": "",
+        "contact-name": "Your Name",
+        "contact-email": "Email Address...",
+        "contact-message": "Write Message Here...",
+        "send-message-btn": "Send Message"
     },
     "pt": {"logo": "Desenvolvedor <span>FULLSTACK</span>",
         "nav-home": "Inicio",
@@ -112,7 +126,7 @@ const translations = {
         "nav-services": "Serviços",
         "nav-portfolio": "Portfolio",
         "nav-contact": "Contato",
-        "hero-hi": "Olá! Seja muito bem vindo(a, e)",
+        "hero-hi": "Olá! Seja muito bem vindo(a)",
         "hero-name": "Me chamo <span>Whole</span>",
         "hero-description": "Sou um profissional formado em engenharia mecatrônica com especialização em programação. Tenho dois anos de experiência no mercado de trabalho, atuando como Desenvolvedor de Software. Trabalho com diversas tecnologias, sendo as principais o Python e o Flask, além do MySQL, JavaScript, HTML e CSS. Atualmente, desempenho várias funções, como a implementação de novos sistemas, integração via API para coleta e inserção automatizada de dados, desenvolvimento de sites, redes e servidores, entre outras atividades. Tenho uma mente curiosa e proativa, sempre em busca de soluções para melhorar a eficiência por meio do estudo de novas tecnologias.",
         "hire-btn": "Contate-me",
@@ -124,6 +138,16 @@ const translations = {
         "exp4": "Email: <span>whole.nunes@gmail.com</span>",
         "exp5": "Celular: <span>+55 11 94912-8218</span>",
         "view-projects-btn": "Ver Todos os Projetos",
+        "myhabilitiessubtitle": "Técnico e Profissional",
+        "myhabilitiestitle": "Minhas Habilidades",
+        "technicalskills": "Técnicas",
+        "profissionalskillstitle": "Profissionais",
+        "pressional-skill1": "Trabalho em Equipe",
+        "pressional-skill2": "Proatividade",
+        "pressional-skill3": "Comunicação",
+        "pressional-skill4": "Resolução de Problemas",
+        "pressional-skill5": "Adaptação",
+        "pressional-skill6": "Liderança",
         "services-title": "Meus <span>Serviços</span>",
         "service1-title": "Controle de Estoque",
         "service1-description": "Sistema de controle de estoque desenvolvido em VBA e integrado com o sistema ERP Tiny, de modo que tenha o estoque em tempo real e consiga adicionar ou excluir produtos direto de uma planilha excel.",
@@ -143,6 +167,10 @@ const translations = {
         "portfolio3-title": "",
         "contact-title": "<span>Contato</span>",
         "footer-copyright": "",
+        "contact-name": "Seu Nome",
+        "contact-email": "Endereço de Email",
+        "contact-message": "Digite sua mensagem aqui",
+        "send-message-btn": "Enviar Mensagem"
     }
   };
 
@@ -165,6 +193,16 @@ const translations = {
     const exp4 = translations[language]["exp4"];
     const exp5 = translations[language]["exp5"];
     const viewProjectsBtn = translations[language]["view-projects-btn"];
+    const myhabilitiesSub = translations[language]['myhabilitiessubtitle'];
+    const myhabilitiesTitle = translations[language]['myhabilitiestitle'];
+    const technicalSkills = translations[language]['technicalskills'];
+    const profissionalskillsTitle = translations[language]['profissionalskillstitle'];
+    const professionalskill1 = translations[language]['pressional-skill1'];
+    const professionalskill2 = translations[language]['pressional-skill2'];
+    const professionalskill3 = translations[language]['pressional-skill3'];
+    const professionalskill4 = translations[language]['pressional-skill4'];
+    const professionalskill5 = translations[language]['pressional-skill5'];
+    const professionalskill6 = translations[language]['pressional-skill6'];
     const servicesTitle = translations[language]["services-title"];
     const service1Title = translations[language]["service1-title"];
     const service1Description = translations[language]["service1-description"];
@@ -182,14 +220,12 @@ const translations = {
     const portfolio2Title = translations[language]["portfolio2-title"];
     const portfolio3Category = translations[language]["portfolio3-category"];
     const portfolio3Title = translations[language]["portfolio3-title"];
-    const portfolio4Category = translations[language]["portfolio4-category"];
-    const portfolio4Title = translations[language]["portfolio4-title"];
-    const portfolio5Category = translations[language]["portfolio5-category"];
-    const portfolio5Title = translations[language]["portfolio5-title"];
-    const portfolio6Category = translations[language]["portfolio6-category"];
-    const portfolio6Title = translations[language]["portfolio6-title"];
     const contactTitle = translations[language]["contact-title"];
     const footerCopyright = translations[language]["footer-copyright"];
+    const contactName = translations[language]['contact-name'];
+    const contactEmail = translations[language]['contact-email'];
+    const contactMessage = translations[language]['contact-message'];
+    const contactBTN = translations[language]['send-message-btn'];
 
     // Atualize os elementos HTML com os textos traduzidos
     document.getElementById('logo').innerHTML = logo;
@@ -210,6 +246,16 @@ const translations = {
     document.getElementById('exp4').innerHTML = exp4;
     document.getElementById('exp5').innerHTML = exp5;
     document.getElementById('view-projects-btn').innerHTML = viewProjectsBtn;
+    document.getElementById('myhabilitiessubtitle').textContent = myhabilitiesSub;
+    document.getElementById('myhabilitiestitle').textContent = myhabilitiesTitle;
+    document.getElementById('technicalskills').textContent = technicalSkills;
+    document.getElementById('profissionalskillstitle').textContent = profissionalskillsTitle
+    document.getElementById('pressional-skill1').textContent = professionalskill1;
+    document.getElementById('pressional-skill2').textContent = professionalskill2;
+    document.getElementById('pressional-skill3').textContent = professionalskill3;
+    document.getElementById('pressional-skill4').textContent = professionalskill4;
+    document.getElementById('pressional-skill5').textContent = professionalskill5;
+    document.getElementById('pressional-skill6').textContent = professionalskill6;
     document.getElementById('services-title').innerHTML = servicesTitle;
     document.getElementById('service1-title').innerHTML = service1Title;
     document.getElementById('service1-description').innerHTML = service1Description;
@@ -227,14 +273,12 @@ const translations = {
     document.getElementById('portfolio2-title').innerHTML = portfolio2Title;
     document.getElementById('portfolio3-category').innerHTML = portfolio3Category;
     document.getElementById('portfolio3-title').innerHTML = portfolio3Title;
-    document.getElementById('portfolio4-category').innerHTML = portfolio4Category;
-    document.getElementById('portfolio4-title').innerHTML = portfolio4Title;
-    document.getElementById('portfolio5-category').innerHTML = portfolio5Category;
-    document.getElementById('portfolio5-title').innerHTML = portfolio5Title;
-    document.getElementById('portfolio6-category').innerHTML = portfolio6Category;
-    document.getElementById('portfolio6-title').innerHTML = portfolio6Title;
     document.getElementById('contact-title').innerHTML = contactTitle;
     document.getElementById('footer-copyright').innerHTML = footerCopyright;
+    document.getElementById('contact-name').placeholder = contactName
+    document.getElementById('contact-email').placeholder = contactEmail
+    document.getElementById('contact-message').placeholder = contactMessage
+    document.getElementById('send-message-btn').value = contactBTN
 }
 
 document.addEventListener('DOMContentLoaded', function () {

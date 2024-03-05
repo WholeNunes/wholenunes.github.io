@@ -28,7 +28,6 @@ body{
 
 }
 
-
 header{
     position: fixed;
     width: 100%;
@@ -664,11 +663,6 @@ form .send-btn:hover{
     }
 }   
 
-
-
-
-
-
 @media (max-width: 1700px){
     header{
         padding: 20px 8%;
@@ -728,6 +722,9 @@ form .send-btn:hover{
         gap: 2rem;
         text-align: center;
     }
+    .hero-img{
+        display: none;
+    }
     .about-img img{
         text-align: center;
         width: 100%;
@@ -749,6 +746,9 @@ form .send-btn:hover{
     }
     .social{
         margin-bottom: 20px;
+    }
+    .hero-img{
+        display: none;
     }
     #menu-icon{
         display: block;
@@ -781,6 +781,9 @@ form .send-btn:hover{
     .main-content p{
         width: 100%;
     }
+    .logo {
+        font-size: 20px;
+    }
     .hero-img{
         display: none;
     }
@@ -791,7 +794,14 @@ form .send-btn:hover{
         font-size: 20px;
     }
     #hero-description{
-        font-size: 12px;
+        font-size: 14px;
+    }
+    .main-content {
+        height: 100%;
+    }
+    .hero{
+        height: 100%;
+        width: 100%;
     }
 }
 
@@ -808,6 +818,4 @@ form .send-btn:hover{
         border-radius: 50%;
         object-fit: cover;
         margin: 0 auto;
-    }
-
-}
+    }}
