@@ -106,13 +106,13 @@ const translations = {
         "service3-title": "Integrations",
         "service3-description": "I carried out several integrations to automate functions, among them I integrated everything from the following companies: Itaú, PayPal, MercadoPago, Jamef, Tiny, Pipefy, RDStation, Whatsapp, Instagram. More focused on payment methods.",
         "service3-btn": "See more  <i class='bx bx-right-arrow-alt'></i>",
-        "portfolio-title": "My <span>Portfolio</span>",
-        "portfolio1-category": "",
-        "portfolio1-title": "",
-        "portfolio2-category": "",
-        "portfolio2-title": "",
-        "portfolio3-category": "",
-        "portfolio3-title": "",
+        // "portfolio-title": "My <span>Portfolio</span>",
+        // "portfolio1-category": "",
+        // "portfolio1-title": "",
+        // "portfolio2-category": "",
+        // "portfolio2-title": "",
+        // "portfolio3-category": "",
+        // "portfolio3-title": "",
         "contact-title": "Contact <span>Me</span>",
         "footer-copyright": "",
         "contact-name": "Your Name",
@@ -158,13 +158,13 @@ const translations = {
         "service3-title": "Integrações",
         "service3-description": "Realizei diversas integrações para automatização de funções, dentre elas integrei tudo das seguintes empresas: Itaú, PayPal, MercadoPago, Jamef, Tiny, Pipefy, RDStation, Whatsapp, Instagram. Mais focado em formas de pagamentos.",
         "service3-btn": "Saiba mais <i class='bx bx-right-arrow-alt'></i>",
-        "portfolio-title": "Meu <span>Portfolio</span>",
-        "portfolio1-category": "",
-        "portfolio1-title": "",
-        "portfolio2-category": "",
-        "portfolio2-title": "",
-        "portfolio3-category": "",
-        "portfolio3-title": "",
+        // "portfolio-title": "Meu <span>Portfolio</span>",
+        // "portfolio1-category": "",
+        // "portfolio1-title": "",
+        // "portfolio2-category": "",
+        // "portfolio2-title": "",
+        // "portfolio3-category": "",
+        // "portfolio3-title": "",
         "contact-title": "<span>Contato</span>",
         "footer-copyright": "",
         "contact-name": "Seu Nome",
@@ -213,13 +213,13 @@ const translations = {
     const service3Title = translations[language]["service3-title"];
     const service3Description = translations[language]["service3-description"];
     const service3Btn = translations[language]["service3-btn"];
-    const portfolioTitle = translations[language]["portfolio-title"];
-    const portfolio1Category = translations[language]["portfolio1-category"];
-    const portfolio1Title = translations[language]["portfolio1-title"];
-    const portfolio2Category = translations[language]["portfolio2-category"];
-    const portfolio2Title = translations[language]["portfolio2-title"];
-    const portfolio3Category = translations[language]["portfolio3-category"];
-    const portfolio3Title = translations[language]["portfolio3-title"];
+    // const portfolioTitle = translations[language]["portfolio-title"];
+    // const portfolio1Category = translations[language]["portfolio1-category"];
+    // const portfolio1Title = translations[language]["portfolio1-title"];
+    // const portfolio2Category = translations[language]["portfolio2-category"];
+    // const portfolio2Title = translations[language]["portfolio2-title"];
+    // const portfolio3Category = translations[language]["portfolio3-category"];
+    // const portfolio3Title = translations[language]["portfolio3-title"];
     const contactTitle = translations[language]["contact-title"];
     const footerCopyright = translations[language]["footer-copyright"];
     const contactName = translations[language]['contact-name'];
@@ -266,13 +266,13 @@ const translations = {
     document.getElementById('service3-title').innerHTML = service3Title;
     document.getElementById('service3-description').innerHTML = service3Description;
     document.getElementById('service3-btn').innerHTML = service3Btn;
-    document.getElementById('portfolio-title').innerHTML = portfolioTitle;
-    document.getElementById('portfolio1-category').innerHTML = portfolio1Category;
-    document.getElementById('portfolio1-title').innerHTML = portfolio1Title;
-    document.getElementById('portfolio2-category').innerHTML = portfolio2Category;
-    document.getElementById('portfolio2-title').innerHTML = portfolio2Title;
-    document.getElementById('portfolio3-category').innerHTML = portfolio3Category;
-    document.getElementById('portfolio3-title').innerHTML = portfolio3Title;
+    // document.getElementById('portfolio-title').innerHTML = portfolioTitle;
+    // document.getElementById('portfolio1-category').innerHTML = portfolio1Category;
+    // document.getElementById('portfolio1-title').innerHTML = portfolio1Title;
+    // document.getElementById('portfolio2-category').innerHTML = portfolio2Category;
+    // document.getElementById('portfolio2-title').innerHTML = portfolio2Title;
+    // document.getElementById('portfolio3-category').innerHTML = portfolio3Category;
+    // document.getElementById('portfolio3-title').innerHTML = portfolio3Title;
     document.getElementById('contact-title').innerHTML = contactTitle;
     document.getElementById('footer-copyright').innerHTML = footerCopyright;
     document.getElementById('contact-name').placeholder = contactName

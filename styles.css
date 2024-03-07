@@ -19,6 +19,8 @@
     
     --h1-font: 4.5rem;
     --h2-font: 2.9rem;
+    --h1-font-popup: 1rem;
+    --p-font-popup: 2rem;
     --p-font: 1rem;
 }
 
@@ -561,15 +563,19 @@ form .send-btn:hover{
     overflow-y: scroll
 }
 .popup p {
-    font-size: 24px;
+    font-size: var(--p-font-popup);
     font-weight: bold;
     color: #007BFF;
+    text-align: center;
 }
 
 .popup h1 {
-    font-size: 18px;
+    padding-top: 10px;
+    font-size: var(--h1-font-popup);
+    color: #000000;
     line-height: 1.6;
     margin-bottom: 20px;
+    text-indent: 20px;
 }
 
 .popup img {
@@ -582,6 +588,25 @@ form .send-btn:hover{
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+}
+
+.botao-fechar {
+    display: block;
+    width: 150px;
+    height: 40px;
+    background-color: #007BFF;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px; /* Para centralizar verticalmente */
+    margin: 0 auto; /* Para centralizar horizontalmente */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botao-fechar:hover {
+    background-color: #0056b3; /* Altera a cor ao passar o mouse */
 }
 
 /* keyframes */
@@ -762,6 +787,10 @@ form .send-btn:hover{
 @media (max-width: 680px){
     .main-content p{
         width: 100%;
+    }
+    :root{
+        --h1-font: 2rem;
+        --h2-font: 1rem;
     }
     .logo {
         font-size: 20px;
