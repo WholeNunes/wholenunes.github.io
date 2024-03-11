@@ -255,7 +255,8 @@ header.sticky{
 }
 .box img{
     margin-bottom: 20px;
-
+    width: 100%;
+    height: auto;
 }
 .box h3{
     font-size: 30px;
@@ -553,6 +554,8 @@ form .send-btn:hover{
 .popup {
     display: none;
     position: fixed;
+    height: 70%;
+    width: 90%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -560,16 +563,10 @@ form .send-btn:hover{
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     z-index: 999;
-    overflow-y: scroll
+    overflow-y: scroll;
+    border-radius: 5%;
 }
 .popup p {
-    font-size: var(--p-font-popup);
-    font-weight: bold;
-    color: #007BFF;
-    text-align: center;
-}
-
-.popup h1 {
     padding-top: 10px;
     font-size: var(--h1-font-popup);
     color: #000000;
@@ -578,8 +575,15 @@ form .send-btn:hover{
     text-indent: 20px;
 }
 
+.popup h1 {
+    font-size: var(--p-font-popup);
+    font-weight: bold;
+    color: #007BFF;
+    text-align: center;
+}
+
 .popup img {
-    width: 100px;
+    width: 100%;
     height: auto;
     margin-right: 10px;
 }
@@ -826,7 +830,7 @@ form .send-btn:hover{
 @media (max-width: 470px){
     :root{
         --h1-font: 1.5rem;
-        --h2-font: 1rem;
+        --h2-font: 2rem;
     }
     .main-content h4{
         font-size: 1rem;
