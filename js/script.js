@@ -72,7 +72,7 @@ const translations = {
         "nav-home": "Home",
         "nav-about": "About",
         "nav-services": "Services",
-        "nav-portfolio": "Portfolio",
+        // "nav-portfolio": "Portfolio",
         "nav-contact": "Contact",
         "hero-hi": "Hi, There!",
         "hero-name": "I'm <span>Whole Nunes</span>",
@@ -124,7 +124,7 @@ const translations = {
         "nav-home": "Inicio",
         "nav-about": "Sobre",
         "nav-services": "Serviços",
-        "nav-portfolio": "Portfolio",
+        // "nav-portfolio": "Portfolio",
         "nav-contact": "Contato",
         "hero-hi": "Olá! Seja muito bem vindo(a)",
         "hero-name": "Me chamo <span>Whole</span>",
@@ -179,7 +179,7 @@ const translations = {
     const navHome = translations[language]["nav-home"];
     const navAbout = translations[language]["nav-about"];
     const navServices = translations[language]["nav-services"];
-    const navPortfolio = translations[language]["nav-portfolio"];
+    // const navPortfolio = translations[language]["nav-portfolio"];
     const navContact = translations[language]["nav-contact"];
     const heroHi = translations[language]["hero-hi"];
     const heroName = translations[language]["hero-name"];
@@ -232,7 +232,7 @@ const translations = {
     document.getElementById('nav-home').innerHTML = navHome;
     document.getElementById('nav-about').innerHTML = navAbout;
     document.getElementById('nav-services').innerHTML = navServices;
-    document.getElementById('nav-portfolio').innerHTML = navPortfolio;
+    // document.getElementById('nav-portfolio').innerHTML = navPortfolio;
     document.getElementById('nav-contact').innerHTML = navContact;
     document.getElementById('hero-hi').innerHTML = heroHi;
     document.getElementById('hero-name').innerHTML = heroName;
