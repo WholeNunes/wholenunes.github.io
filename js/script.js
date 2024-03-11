@@ -286,3 +286,17 @@ document.addEventListener('DOMContentLoaded', function () {
         changeLanguage(this.value);
     });
 });
+
+function enviarEmail() {
+    var nome = document.getElementById('contact-name').value;
+    var email = document.getElementById('contact-email').value;
+    var mensagem = document.getElementById('contact-message').value;
+    var numero = '11949128218'
+
+    var assunto = encodeURIComponent("Novo email de contato de " + nome);
+    var corpo = encodeURIComponent("Nome: " + nome + "\n" +
+                                    "Email: " + email + "\n" +
+                                    "Mensagem: " + mensagem);
+    var mailtoLink = "https://api.whatsapp.com/send?phone=" + numero + "&text=" + corpo
+    window.open(mailtoLink);
+}
