@@ -38,7 +38,6 @@ circles.forEach(elem=>{
 
 // Função para exibir o popup
 function exibirPopup(popup) {
-    console.log(popup.id)
     if(popup.id === 'service1-btn') {
         document.getElementById('popup1').style.display = 'block';
     } else if(popup.id === 'service2-btn') {
@@ -72,7 +71,6 @@ const translations = {
         "nav-home": "Home",
         "nav-about": "About",
         "nav-services": "Services",
-        // "nav-portfolio": "Portfolio",
         "nav-contact": "Contact",
         "hero-hi": "Hi, There!",
         "hero-name": "I'm <span>Whole Nunes</span>",
@@ -106,25 +104,46 @@ const translations = {
         "service3-title": "Integrations",
         "service3-description": "I carried out several integrations to automate functions, among them I integrated everything from the following companies: Itaú, PayPal, MercadoPago, Jamef, Tiny, Pipefy, RDStation, Whatsapp, Instagram. More focused on payment methods.",
         "service3-btn": "See more  <i class='bx bx-right-arrow-alt'></i>",
-        // "portfolio-title": "My <span>Portfolio</span>",
-        // "portfolio1-category": "",
-        // "portfolio1-title": "",
-        // "portfolio2-category": "",
-        // "portfolio2-title": "",
-        // "portfolio3-category": "",
-        // "portfolio3-title": "",
         "contact-title": "Contact <span>Me</span>",
         "footer-copyright": "",
         "contact-name": "Your Name",
         "contact-email": "Email Address...",
         "contact-message": "Write Message Here...",
-        "send-message-btn": "Send Message"
-    },
+        "send-message-btn": "Send Message",
+        "p-services-paypal": "The integration with PayPal was developed to better fill in the information contained in your payment link, adding items, additional information, shipping, discounts, company, and customer information, among other details. Here are the functionalities used:",
+        "li1-services-paypal": "Payment Link (Invoicing) <b>POST/GET/PUSH/DELETE</b>",
+        "li2-services-paypal": "WebHooks <b>POST/GET/PUSH/DELETE</b>",
+        "p-services-mercadopago": "Using the Mercado Pago API, I developed an integration that allows generating payment links quickly and personalized. I limited payment options to optimize the user experience and implemented webhooks to receive instant payment confirmation notifications, facilitating financial control and management of the system.",
+        "li1-services-mercadopago": "Preferences (with Payment Flow) <b>POST/GET/PUSH/DELETE</b>",
+        "li2-services-mercadopago": "Payments <b>GET/DELETE</b>",
+        "li3-services-mercadopago": "WebHook (Notification URL)",
+        "p-services-itau": "I integrated the Itaú API for PIX and boletos, offering agile and personalized payments. The generated PIX codes have copy and paste or QR Code options, facilitating payments. Similarly, boletos also have these options. I implemented webhooks for real-time payment updates, optimizing financial management.",
+        "li1-services-itau": "Immediate PIX <b>POST/PUT/PATCH</b>",
+        "li2-services-itau": "Bolecode <b>POST/GET/PATCH</b>",
+        "li3-services-itau": "WebHook <b>PUT/DELETE</b>",
+        "p-services-tiny": "In Tiny ERP, I carried out a comprehensive integration using its API. This integration included various functionalities such as customer registration, modification, and retrieval, as well as complete order management, from acquisition to inventory and account releases. Additionally, I implemented features related to invoices, accounts payable and receivable, using webhooks for real-time updates of inventory and orders. This integration provided complete and automated management of essential system processes.",
+        "li1-services-tiny": "Inventory <b>POST/GET</b>",
+        "li2-services-tiny": "Orders <b>POST/GET</b>",
+        "li3-services-tiny": "Invoices <b>POST/GET</b>",
+        "li4-services-tiny": "Service Invoices <b>POST/GET</b>",
+        "li5-services-tiny": "Contacts <b>POST/GET</b>",
+        "li6-services-tiny": "Accounts Receivable <b>POST/GET</b>",
+        "li7-services-tiny": "Accounts Payable <b>POST/GET</b>",
+        "li8-services-tiny": "Separation and Freight Quotation <b>POST/GET</b>",
+        "li9-services-tiny": "Ecommerce Integrations and ERP Implementation",
+        "li10-services-tiny": "Webhooks",
+        "p-services-rdstation": "In RDStation, I developed a comprehensive integration using its API for lead management in CRM. I implemented functionalities to include, delete, move, and update lead information automatically. This provided efficient and organized customer relationship management, optimizing marketing and sales processes.",
+        "li1-services-rdstation": "DEALS <b>POST/GET</b>",
+        "li2-services-rdstation": "PRODUCTS <b>POST/GET</b>",
+        "p-services-pipefy": "In Pipefy, I developed an integration using the specific GraphQL API for creating, inserting, moving, and collecting information in cards. This integration automated workflows, speeding up task creation and management within the system. Through the GraphQL API, I performed operations such as creating new cards, inserting data into cards, moving them between process stages, and collecting relevant card information, providing efficient and organized activity management.",
+        "li1-services-pipefy": "GraphQL",
+        "p-services-googlesheets": "Using the Google Sheets API, I automated data collection processes efficiently and allowed continuous and accurate updates of product information in the database. This provided agile and accurate management of essential information for the system.",
+        "p-services-viacep": "I integrated the ViaCEP service for address inquiries using the CEP. Through the ViaCEP API, I implemented functionalities that allowed automated address inquiries based on the provided CEP. This provided a fast and efficient way to obtain accurate address information, facilitating registration and data update processes within the system.",
+        "p-services-jamef": "Using the Jamef API, I integrated the freight calculation functionality into my system. This integration automated the process of checking freight costs for different destinations, providing a more efficient experience for customers during shipment quotes."    },
     "pt": {"logo": "Desenvolvedor <span>FULLSTACK</span>",
         "nav-home": "Inicio",
         "nav-about": "Sobre",
         "nav-services": "Serviços",
-        // "nav-portfolio": "Portfolio",
         "nav-contact": "Contato",
         "hero-hi": "Olá! Seja muito bem vindo(a)",
         "hero-name": "Me chamo <span>Whole</span>",
@@ -158,19 +177,42 @@ const translations = {
         "service3-title": "Integrações",
         "service3-description": "Realizei diversas integrações para automatização de funções, dentre elas integrei tudo das seguintes empresas: Itaú, PayPal, MercadoPago, Jamef, Tiny, Pipefy, RDStation, Whatsapp, Instagram. Mais focado em formas de pagamentos.",
         "service3-btn": "Saiba mais <i class='bx bx-right-arrow-alt'></i>",
-        // "portfolio-title": "Meu <span>Portfolio</span>",
-        // "portfolio1-category": "",
-        // "portfolio1-title": "",
-        // "portfolio2-category": "",
-        // "portfolio2-title": "",
-        // "portfolio3-category": "",
-        // "portfolio3-title": "",
         "contact-title": "<span>Contato</span>",
         "footer-copyright": "",
         "contact-name": "Seu Nome",
         "contact-email": "Endereço de Email",
         "contact-message": "Digite sua mensagem aqui",
-        "send-message-btn": "Enviar Mensagem"
+        "send-message-btn": "Enviar Mensagem",
+        "p-services-paypal": "A integração com o PayPal foi desenvolvida para ter um melhor preenchimento das informações contidas no seu link de pagamento, adicionando itens, informações adicionais, frete, desconto, informações da empresa e do cliente dentre outras informações. Segue as funcionalidades utilizadas:",
+        "li1-services-paypal": "Link de Pagamento (Invoicing) <b>POST/GET/PUSH/DELETE</b>",
+        "li2-services-paypal": "WebHooks <b>POST/GET/PUSH/DELETE</b>",
+        "p-services-mercadopago": "Utilizando a API do Mercado Pago, desenvolvi uma integração que permite gerar links de pagamento de forma rápida e personalizada. Limitei as opções de pagamento para otimizar a experiência do usuário e implementei webhooks para receber notificações instantâneas de confirmação de pagamento, facilitando o controle e a gestão financeira do sistema.",
+        "li1-services-mercadopago": "Preferências (c/ Fluxo de Pagamento) <b>POST/GET/PUSH/DELETE</b>",
+        "li2-services-mercadopago": "Pagamentos <b>GET/DELETE</b>",
+        "li2-services-mercadopago": "WebHook (Notification URL)",
+        "p-services-itau": "Integrei a API do Itaú para PIX e boletos, oferecendo pagamentos ágeis e personalizados. Os códigos PIX gerados têm opções de cópia e cola ou QR Code, facilitando os pagamentos. Da mesma forma, os boletos também possuem essas opções. Implementei webhooks para atualizações em tempo real dos pagamentos, otimizando a gestão financeira.",
+        "li1-services-itau": "PIX imediato <b>POST/PUT/PATCH</b>",
+        "li2-services-itau": "Bolecode <b>POST/GET/PATCH</b>",
+        "li2-services-itau": "WebHook <b>PUT/DELETE</b>",
+        "p-services-tiny": "No Tiny ERP, realizei uma integração abrangente utilizando sua API. Esta integração abrangeu diversas funcionalidades, incluindo o cadastro, alteração e obtenção de clientes, assim como a gestão completa de pedidos, desde sua obtenção até o lançamento de estoque e contas. Além disso, implementei funcionalidades relacionadas a notas fiscais, contas a pagar e a receber, utilizando webhooks para atualização em tempo real de estoque e pedidos. Essa integração proporcionou uma gestão completa e automatizada dos processos essenciais do sistema.",
+        "li1-services-tiny": "Estoque <b>POST/GET</b>",
+        "li2-services-tiny": "Pedidos <b>POST/GET</b>",
+        "li3-services-tiny": "Notas Fiscais <b>POST/GET</b>",
+        "li4-services-tiny": "Notas Fiscais de Serviços <b>POST/GET</b>",
+        "li5-services-tiny": "Contatos <b>POST/GET</b>",
+        "li6-services-tiny": "Contas a Receber <b>POST/GET</b>",
+        "li7-services-tiny": "Contas a Pagar <b>POST/GET</b>",
+        "li8-services-tiny": "Separação e Cotação de Frete <b>POST/GET</b>",
+        "li9-services-tiny": "Integrações com Ecommerce e Implementação do ERP",
+        "li10-services-tiny": "Webhooks",
+        "p-services-rdstation": "No RDStation, desenvolvi uma integração completa utilizando sua API para o gerenciamento de leads no CRM. Implementei funcionalidades que permitiam incluir, excluir, mover e atualizar informações dos leads de forma automatizada. Isso proporcionou uma gestão eficiente e organizada do relacionamento com os clientes, otimizando os processos de marketing e vendas.",
+        "li1-services-rdstation": "DEALS <b>POST/GET</b>",
+        "li2-services-rdstation": "PRODUCTS <b>POST/GET</b>",
+        "p-services-pipefy": "No Pipefy, desenvolvi uma integração utilizando a API GraphQL específica do sistema para criação, inserção, movimentação e coleta de informações em cards. Esta integração permitiu automatizar fluxos de trabalho, agilizando a criação e gestão de tarefas dentro do sistema. Por meio da API GraphQL, pude realizar operações como criar novos cards, inserir dados nos cards, movê-los entre etapas do processo e coletar informações relevantes dos cards, proporcionando uma gestão eficiente e organizada das atividades.",
+        "li1-services-pipefy": "GraphQL",
+        "p-services-googlesheets": "Utilizando a API do Google Sheets, automatizei processos de coleta de dados de forma eficiente, além de permitir a atualização contínua e precisa das informações dos produtos no banco de dados. Isso proporcionou uma gestão mais ágil e precisa das informações essenciais para o sistema.",
+        "p-services-viacep": "Integrei o serviço ViaCEP para consultas de endereço utilizando o CEP. Através da API do ViaCEP, implementei funcionalidades que permitiram realizar consultas automatizadas de endereços a partir do CEP informado. Isso proporcionou uma maneira rápida e eficiente de obter informações precisas de endereços, facilitando processos de cadastro e atualização de dados dentro do sistema.",
+        "p-services-jamef": "Utilizando a API da Jamef, integrei a funcionalidade de cálculo de frete em meu sistema. Essa integração permitiu automatizar o processo de consulta de valores de frete para diferentes destinos, proporcionando uma experiência mais eficiente para os clientes durante a cotação de envios.",
     }
   };
 
@@ -179,7 +221,6 @@ const translations = {
     const navHome = translations[language]["nav-home"];
     const navAbout = translations[language]["nav-about"];
     const navServices = translations[language]["nav-services"];
-    // const navPortfolio = translations[language]["nav-portfolio"];
     const navContact = translations[language]["nav-contact"];
     const heroHi = translations[language]["hero-hi"];
     const heroName = translations[language]["hero-name"];
@@ -213,26 +254,48 @@ const translations = {
     const service3Title = translations[language]["service3-title"];
     const service3Description = translations[language]["service3-description"];
     const service3Btn = translations[language]["service3-btn"];
-    // const portfolioTitle = translations[language]["portfolio-title"];
-    // const portfolio1Category = translations[language]["portfolio1-category"];
-    // const portfolio1Title = translations[language]["portfolio1-title"];
-    // const portfolio2Category = translations[language]["portfolio2-category"];
-    // const portfolio2Title = translations[language]["portfolio2-title"];
-    // const portfolio3Category = translations[language]["portfolio3-category"];
-    // const portfolio3Title = translations[language]["portfolio3-title"];
     const contactTitle = translations[language]["contact-title"];
     const footerCopyright = translations[language]["footer-copyright"];
     const contactName = translations[language]['contact-name'];
     const contactEmail = translations[language]['contact-email'];
     const contactMessage = translations[language]['contact-message'];
     const contactBTN = translations[language]['send-message-btn'];
+    const pservicespaypal = translations[language]['p-services-paypal'];
+    const li1servicespaypal = translations[language]['li1-services-paypal'];
+    const li2servicespaypal = translations[language]['li2-services-paypal'];
+    const pservicesmercadopago = translations[language]['p-services-mercadopago'];
+    const li1servicesmercadopago = translations[language]['li1-services-mercadopago'];
+    const li2servicesmercadopago = translations[language]['li2-services-mercadopago'];
+    const li3servicesmercadopago = translations[language]['li3-services-mercadopago'];
+    const pservicesitau = translations[language]['p-services-itau'];
+    const li1servicesitau = translations[language]['li1-services-itau'];
+    const li2servicesitau = translations[language]['li2-services-itau'];
+    const li3servicesitau = translations[language]['li3-services-itau'];
+    const pservicestiny = translations[language]['p-services-tiny'];
+    const li1servicestiny = translations[language]['li1-services-tiny'];
+    const li2servicestiny = translations[language]['li2-services-tiny'];
+    const li3servicestiny = translations[language]['li3-services-tiny'];
+    const li4servicestiny = translations[language]['li4-services-tiny'];
+    const li5servicestiny = translations[language]['li5-services-tiny'];
+    const li6servicestiny = translations[language]['li6-services-tiny'];
+    const li7servicestiny = translations[language]['li7-services-tiny'];
+    const li8servicestiny = translations[language]['li8-services-tiny'];
+    const li9servicestiny = translations[language]['li9-services-tiny'];
+    const li10servicestiny = translations[language]['li10-services-tiny'];
+    const pservicesrdstation = translations[language]['p-services-rdstation'];
+    const li1servicesrdstation = translations[language]['li1-services-rdstation'];
+    const li2servicesrdstation = translations[language]['li2-services-rdstation'];
+    const pservicespipefy = translations[language]['p-services-pipefy'];
+    const li1servicespipefy = translations[language]['li1-services-pipefy'];
+    const pservicesgooglesheets = translations[language]['p-services-googlesheets'];
+    const pservicesviacep = translations[language]['p-services-viacep'];
+    const pservicesjamef = translations[language]['p-services-jamef'];
 
-    // Atualize os elementos HTML com os textos traduzidos
+
     document.getElementById('logo').innerHTML = logo;
     document.getElementById('nav-home').innerHTML = navHome;
     document.getElementById('nav-about').innerHTML = navAbout;
     document.getElementById('nav-services').innerHTML = navServices;
-    // document.getElementById('nav-portfolio').innerHTML = navPortfolio;
     document.getElementById('nav-contact').innerHTML = navContact;
     document.getElementById('hero-hi').innerHTML = heroHi;
     document.getElementById('hero-name').innerHTML = heroName;
@@ -266,19 +329,42 @@ const translations = {
     document.getElementById('service3-title').innerHTML = service3Title;
     document.getElementById('service3-description').innerHTML = service3Description;
     document.getElementById('service3-btn').innerHTML = service3Btn;
-    // document.getElementById('portfolio-title').innerHTML = portfolioTitle;
-    // document.getElementById('portfolio1-category').innerHTML = portfolio1Category;
-    // document.getElementById('portfolio1-title').innerHTML = portfolio1Title;
-    // document.getElementById('portfolio2-category').innerHTML = portfolio2Category;
-    // document.getElementById('portfolio2-title').innerHTML = portfolio2Title;
-    // document.getElementById('portfolio3-category').innerHTML = portfolio3Category;
-    // document.getElementById('portfolio3-title').innerHTML = portfolio3Title;
     document.getElementById('contact-title').innerHTML = contactTitle;
     document.getElementById('footer-copyright').innerHTML = footerCopyright;
     document.getElementById('contact-name').placeholder = contactName
     document.getElementById('contact-email').placeholder = contactEmail
     document.getElementById('contact-message').placeholder = contactMessage
     document.getElementById('send-message-btn').value = contactBTN
+    document.getElementById('p-services-paypal').innerHTML = pservicespaypal
+    document.getElementById('li1-services-paypal').innerHTML = li1servicespaypal
+    document.getElementById('li2-services-paypal').innerHTML = li2servicespaypal
+    document.getElementById('p-services-mercadopago').innerHTML = pservicesmercadopago
+    document.getElementById('li1-services-mercadopago').innerHTML = li1servicesmercadopago
+    document.getElementById('li2-services-mercadopago').innerHTML = li2servicesmercadopago
+    document.getElementById('li3-services-mercadopago').innerHTML = li3servicesmercadopago
+    document.getElementById('p-services-itau').innerHTML = pservicesitau
+    document.getElementById('li1-services-itau').innerHTML = li1servicesitau
+    document.getElementById('li2-services-itau').innerHTML = li2servicesitau
+    document.getElementById('li3-services-itau').innerHTML = li3servicesitau
+    document.getElementById('p-services-tiny').innerHTML = pservicestiny
+    document.getElementById('li1-services-tiny').innerHTML = li1servicestiny
+    document.getElementById('li2-services-tiny').innerHTML = li2servicestiny
+    document.getElementById('li3-services-tiny').innerHTML = li3servicestiny
+    document.getElementById('li4-services-tiny').innerHTML = li4servicestiny
+    document.getElementById('li5-services-tiny').innerHTML = li5servicestiny
+    document.getElementById('li6-services-tiny').innerHTML = li6servicestiny
+    document.getElementById('li7-services-tiny').innerHTML = li7servicestiny
+    document.getElementById('li8-services-tiny').innerHTML = li8servicestiny
+    document.getElementById('li9-services-tiny').innerHTML = li9servicestiny
+    document.getElementById('li10-services-tiny').innerHTML = li10servicestiny
+    document.getElementById('p-services-rdstation').innerHTML = pservicesrdstation
+    document.getElementById('li1-services-rdstation').innerHTML = li1servicesrdstation
+    document.getElementById('li2-services-rdstation').innerHTML = li2servicesrdstation
+    document.getElementById('p-services-pipefy').innerHTML = pservicespipefy
+    document.getElementById('li1-services-pipefy').innerHTML = li1servicespipefy
+    document.getElementById('p-services-googlesheets').innerHTML = pservicesgooglesheets
+    document.getElementById('p-services-viacep').innerHTML = pservicesviacep
+    document.getElementById('p-services-jamef').innerHTML = pservicesjamef
 }
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -300,3 +386,16 @@ function enviarEmail() {
     var mailtoLink = "https://api.whatsapp.com/send?phone=" + numero + "&text=" + corpo
     window.open(mailtoLink);
 }
+
+var player;
+
+function onYouTubeIframeAPIReady() {
+    player = new YT.Player('youtube-video');
+}
+
+function pauseVideo() {
+    if (player && player.stopVideo) {
+        player.stopVideo();
+    }
+}
+window.addEventListener('beforeunload', pauseVideo);

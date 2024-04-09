@@ -233,54 +233,6 @@
             </div>
         </div>
     </section>
-
-    <!-- portfolio -->
-    <!-- <section class="portfolio" id="portfolio">
-        <div class="center-text" data-aos="fade-down">
-            <h2 id="portfolio-title"><span></span></h2>
-        </div>
-        <div class="Portfolio-content" data-aos="fade-down">
-            <div class="row">
-                <img src="img/background.png">
-                <div class="main-row">
-                    <div class="row-text">
-                        <h5 id="portfolio1-category"></h5>
-                    </div>
-                    <div class="row-icon">
-                        <i class='bx bxl-github'></i>
-                    </div>
-                </div>
-                <h4 id="portfolio1-title"></h4>
-            </div>
-
-            <div class="row">
-                <img src="img/background.png">
-                <div class="main-row">
-                    <div class="row-text">
-                        <h5 id="portfolio2-category"></h5>
-                    </div>
-                    <div class="row-icon">
-                        <i class='bx bxl-github' ></i>
-                    </div>
-                </div>
-                <h4 id="portfolio2-title"></h4>
-            </div>
-
-            <div class="row">
-                <img src="img/background.png">
-                <div class="main-row">
-                    <div class="row-text">
-                        <h5 id="portfolio3-category"></h5>
-                    </div>
-                    <div class="row-icon">
-                        <i class='bx bxl-github' ></i>
-                    </div>
-                </div>
-                <h4 id="portfolio3-title"></h4>
-            </div>
-        </div>
-    </section> -->
-    <!-- contact -->
     <section class="contact" id="contact">
         <div class="center-text" data-aos="fade-down">
             <h2 id="contact-title"><span></span></h2>
@@ -314,7 +266,6 @@
     </script>
 
 <div class="popup" id="popup1">
-    <!-- Coloque o texto desejado aqui -->
     <h1>Controle de Estoque em VBA</h1>
     <p> Foi um projeto que eu peguei como Freelancer com o objetivo de auxiliar o cliente com o controle de estoque dele e realizar a integração com o Tiny ERP via API Rest.</p>
     <p>O cliente me forneceu uma planilha e o formato que ele gostaria de visualizar as informações, sendo esta composta pelas tabelas: Enviar Produtos, Receber Produtos e Atualizar Informações.</p>
@@ -329,17 +280,100 @@
     <p>Obs: Imagem com dados fictícios</p>
     <button class="botao-fechar" onclick="fecharPopup('popup1')">Fechar</button>
 </div>
-<div class="popup" id="popup2">
-    <div class="video-container">
-        <!-- Substitua o ID do vídeo pelo ID do vídeo do YouTube que você quer incorporar -->
-        <iframe width="560" height="315" src="https://youtu.be/DD4w9z38Gt0" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <button onclick="fecharPopup('popup2')">Fechar</button>
+<div class="popup2" id="popup2">
+    <iframe class="video-youtube" id="youtube-video" src="https://www.youtube.com/embed/DD4w9z38Gt0?enablejsapi=1" title="Portal" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <button class="botao-fechar" onclick="fecharPopup('popup2'), pauseVideo()">Fechar</button>
 </div>
 <div class="popup" id="popup3">
-    <!-- Coloque o texto desejado aqui -->
-    <p>Seu texto aqui</p>
-    <button onclick="fecharPopup('popup3')">Fechar</button>
+    <div class="icon-paragraph">
+        <img src="img/paypal.png" alt="PayPal">
+        <div class="description">
+          <p id="p-services-paypal"></p>
+          <ul>
+            <li id="li1-services-paypal"></li>
+            <li id="li2-services-paypal"></li>
+          </ul>
+        </div>
+    </div>
+    <div class="icon-paragraph">
+        <img src="img/mercadopago.png" alt="MercadoPago">
+        <div class="description">
+          <p id="p-services-mercadopago"></p>
+          <ul>
+            <li id="li1-services-mercadopago"></li>
+            <li id="li2-services-mercadopago"></li>
+            <li id="li3-services-mercadopago"></li>
+          </ul>
+        </div>
+    </div>
+    <div class="icon-paragraph">
+        <img src="img/itau.png" alt="Itau">
+        <div class="description">
+          <p id="p-services-itau"></p>
+          <ul>
+            <li id="li1-services-itau"></li>
+            <li id="li2-services-itau"></li>
+            <li id="li3-services-itau"></li>
+          </ul>
+        </div>
+    </div>
+    <div class="icon-paragraph">
+        <img src="img/tiny.png" alt="Tiny">
+        <div class="description">
+          <p id="p-services-tiny"></p>
+          <ul>
+            <li id="li1-services-tiny"></li>
+            <li id="li2-services-tiny"></li>
+            <li id="li3-services-tiny"></li>
+            <li id="li4-services-tiny"></li>
+            <li id="li5-services-tiny"></li>
+            <li id="li6-services-tiny"></li>
+            <li id="li7-services-tiny"></li>
+            <li id="li8-services-tiny"></li>
+            <li id="li9-services-tiny"></li>
+            <li id="li10-services-tiny"></li>
+          </ul>
+        </div>
+    </div>
+    <div class="icon-paragraph">
+        <img src="img/rdstation.png" alt="RDStation">
+        <div class="description">
+          <p id="p-services-rdstation"></p>
+          <ul>
+            <li id="li1-services-rdstation"></li>
+            <li id="li2-services-rdstation"></li>
+          </ul>
+        </div>
+    </div>
+    <div class="icon-paragraph">
+        <img src="img/pipefy.png" alt="Pipefy">
+        <div class="description">
+          <p id="p-services-pipefy"></p>
+          <ul>
+            <li id="li1-services-pipefy"></li>
+          </ul>
+        </div>
+    </div>
+    <div class="icon-paragraph">
+        <img src="img/googlesheets.png" alt="GoogleSheets">
+        <div class="description">
+          <p id="p-services-googlesheets"></p>
+        </div>
+    </div>
+    <div class="icon-paragraph">
+        <img src="img/viaCEP.png" alt="viaCEP">
+        <div class="description">
+          <p id="p-services-viacep"></p>
+        </div>
+    </div>
+    <div class="icon-paragraph">
+        <img src="img/jamef.png" alt="Jamef">
+        <div class="description">
+          <p id="p-services-jamef"></p>
+        </div>
+    </div>
+    <button class="botao-fechar" onclick="fecharPopup('popup3')">Fechar</button>
 </div>
+<script src="https://www.youtube.com/iframe_api"></script>
 </body>
 </html>

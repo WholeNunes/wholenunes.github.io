@@ -582,7 +582,7 @@ form .send-btn:hover{
 .popup {
     display: none;
     position: fixed;
-    height: 70%;
+    height: 80%;
     width: 90%;
     top: 50%;
     left: 50%;
@@ -592,8 +592,25 @@ form .send-btn:hover{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     z-index: 999;
     overflow-y: scroll;
-    border-radius: 5%;
+    border-radius: 2%;
 }
+
+.popup2 {
+    display: none;
+    position: fixed;
+    height: 87%;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    background-color: #fff;
+}
+.video-youtube {
+    width: 1250px;
+    height: 703px
+}
+
 .popup p {
     padding-top: 10px;
     font-size: var(--h1-font-popup);
@@ -621,7 +638,43 @@ form .send-btn:hover{
     justify-content: space-between;
     margin-top: 20px;
 }
+.icon-paragraph {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
 
+.icon-paragraph img{
+    width: 10%;
+    height: 10%;
+}
+.description h3 {
+margin-top: 0;
+}
+
+.description p {
+margin-bottom: 0;
+}
+.icon-paragraph ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  /* Estilo dos itens da lista dentro da classe .icon-paragraph */
+  .icon-paragraph li {
+    color: #000000;
+    position: relative;
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+  
+  /* Estilo do marcador dentro da classe .icon-paragraph */
+  .icon-paragraph li::before {
+    content: "\2022"; /* Código Unicode para o marcador de ponto (•) */
+    position: absolute;
+    left: 0;
+    color: #007bff; /* Cor do marcador */
+  }
 .botao-fechar {
     display: block;
     width: 150px;
