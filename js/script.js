@@ -128,7 +128,7 @@ const translations = {
         "nav-contact": "Contato",
         "hero-hi": "Olá! Seja muito bem vindo(a)",
         "hero-name": "Me chamo <span>Whole</span>",
-        "hero-description": "Sou um profissional formado em engenharia mecatrônica com especialização em programação. Tenho dois anos de experiência no mercado de trabalho, atuando como Desenvolvedor de Software. Trabalho com diversas tecnologias, sendo as principais o Python e o Flask, além do MySQL, JavaScript, HTML e CSS. Atualmente, desempenho várias funções, como a implementação de novos sistemas, integração via API para coleta e inserção automatizada de dados, desenvolvimento de sites, redes e servidores, entre outras atividades. Tenho uma mente curiosa e proativa, sempre em busca de soluções para melhorar a eficiência por meio do estudo de novas tecnologias.",
+        "hero-description": "Formado em engenharia mecatrônica com foco em programação, tenho dois anos de experiência no mercado de trabalho, atuando como Desenvolvedor de Software. Trabalho com diversas tecnologias, sendo as principais o Python e o Flask, além do MySQL, JavaScript, HTML e CSS. Atualmente, desempenho várias funções, como a implementação de novos sistemas, integração via API para coleta e inserção automatizada de dados, desenvolvimento de sites, redes e servidores, entre outras atividades. Tenho uma mente curiosa e proativa, sempre em busca de soluções para melhorar a eficiência por meio do estudo de novas tecnologias.",
         "hire-btn": "Contate-me",
         "download-cv-btn": "Baixar CV",
         "about-title": "Eu sou um <span>Desenvolvedor</span> & Cientista de Dados",
