@@ -110,6 +110,12 @@ const translations = {
         "contact-email": "Email Address...",
         "contact-message": "Write Message Here...",
         "send-message-btn": "Send Message",
+        "h1-services-controledeestoque": "Inventory Control with VBA",
+        "p1-services-controledeestoque": "I developed a project as a Freelancer to assist a client with inventory control, integrating it with Tiny ERP via Rest API. I used VBA to create functionalities in an Excel spreadsheet:",
+        "li1-services-controledeestoque": "Product Submission: I developed a code that allows registering products in Tiny ERP based on essential information filled out in the spreadsheet and a button click.",
+        "li2-services-controledeestoque": "Product Return: I implemented a function that allows bringing back to the spreadsheet the products already registered in the system. Any change, such as in the stock, is updated in the spreadsheet.",
+        "li3-services-controledeestoque": "Product Data Modification: I created a table to modify product information, such as stock, name, code, and deactivation.",
+        "p2-services-controledeestoque": "To improve visualization, I added the functionality of Automatically Receiving Products, checking for changes in the system items periodically. The only limitation encountered was the lack of resources in the Tiny API, such as Order of Purchases.",
         "p-services-paypal": "The integration with PayPal was developed to better fill in the information contained in your payment link, adding items, additional information, shipping, discounts, company, and customer information, among other details. Here are the functionalities used:",
         "li1-services-paypal": "Payment Link (Invoicing) <b>POST/GET/PUSH/DELETE</b>",
         "li2-services-paypal": "WebHooks <b>POST/GET/PUSH/DELETE</b>",
@@ -183,6 +189,12 @@ const translations = {
         "contact-email": "Endereço de Email",
         "contact-message": "Digite sua mensagem aqui",
         "send-message-btn": "Enviar Mensagem",
+        "h1-services-controledeestoque": "Controle de Estoque em VBA",
+        "p1-services-controledeestoque": "Desenvolvi um projeto como Freelancer para auxiliar um cliente no controle de estoque, integrando-o com o Tiny ERP via API Rest. Utilizei VBA para criar funcionalidades em uma planilha Excel:",
+        "li1-services-controledeestoque": "Envio de Produtos: Desenvolvi um código que permite cadastrar produtos no Tiny ERP a partir do preenchimento de informações essenciais na planilha e um clique em um botão.",
+        "li2-services-controledeestoque": "Retorno de Produtos: Implementei uma função que possibilita trazer de volta para a planilha os produtos já cadastrados no sistema. Qualquer alteração, como no estoque, é atualizada na planilha.",
+        "li3-services-controledeestoque": "Alteração de Dados dos Produtos: Criei uma tabela para modificar informações dos produtos, como estoque, nome, código e inativação.",
+        "p2-services-controledeestoque": "Para melhorar a visualização, adicionei a funcionalidade de Receber Produtos de forma automática, verificando as alterações nos itens do sistema periodicamente. A única limitação encontrada foi a ausência de recursos na API do Tiny, como a de Ordem de Compras.",
         "p-services-paypal": "A integração com o PayPal foi desenvolvida para ter um melhor preenchimento das informações contidas no seu link de pagamento, adicionando itens, informações adicionais, frete, desconto, informações da empresa e do cliente dentre outras informações. Segue as funcionalidades utilizadas:",
         "li1-services-paypal": "Link de Pagamento (Invoicing) <b>POST/GET/PUSH/DELETE</b>",
         "li2-services-paypal": "WebHooks <b>POST/GET/PUSH/DELETE</b>",
@@ -290,6 +302,12 @@ const translations = {
     const pservicesgooglesheets = translations[language]['p-services-googlesheets'];
     const pservicesviacep = translations[language]['p-services-viacep'];
     const pservicesjamef = translations[language]['p-services-jamef'];
+    const h1servicescontroledeestoque = translations[language]['h1-services-controledeestoque']
+    const p1servicescontroledeestoque = translations[language]['p1-services-controledeestoque']
+    const li1servicescontroledeestoque = translations[language]['li1-services-controledeestoque']
+    const li2servicescontroledeestoque = translations[language]['li2-services-controledeestoque']
+    const li3servicescontroledeestoque = translations[language]['li3-services-controledeestoque']
+    const p2servicescontroledeestoque = translations[language]['p2-services-controledeestoque']
 
 
     document.getElementById('logo').innerHTML = logo;
@@ -365,6 +383,12 @@ const translations = {
     document.getElementById('p-services-googlesheets').innerHTML = pservicesgooglesheets
     document.getElementById('p-services-viacep').innerHTML = pservicesviacep
     document.getElementById('p-services-jamef').innerHTML = pservicesjamef
+    document.getElementById('h1-services-controledeestoque').innerHTML = h1servicescontroledeestoque
+    document.getElementById('p1-services-controledeestoque').innerHTML = p1servicescontroledeestoque
+    document.getElementById('li1-services-controledeestoque').innerHTML = li1servicescontroledeestoque
+    document.getElementById('li2-services-controledeestoque').innerHTML = li2servicescontroledeestoque
+    document.getElementById('li3-services-controledeestoque').innerHTML = li3servicescontroledeestoque
+    document.getElementById('p2-services-controledeestoque').innerHTML = p2servicescontroledeestoque
 }
 
 document.addEventListener('DOMContentLoaded', function () {

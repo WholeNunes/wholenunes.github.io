@@ -594,7 +594,20 @@ form .send-btn:hover{
     overflow-y: scroll;
     border-radius: 2%;
 }
-
+.popup li {
+    color: #000000;
+    position: relative;
+    padding-left: 40px;
+    margin-top: 10px;
+}
+  
+.popup li::before {
+    content: "\2022";
+    position: absolute;
+    left: 0;
+    color: #007bff;
+    padding-left: 25px;
+}
 .popup2 {
     display: none;
     position: fixed;
@@ -649,32 +662,29 @@ form .send-btn:hover{
     height: 10%;
 }
 .description h3 {
-margin-top: 0;
+    margin-top: 0;
 }
 
 .description p {
-margin-bottom: 0;
+    margin-bottom: 0;
 }
 .icon-paragraph ul {
     list-style-type: none;
     padding-left: 0;
-  }
-  
-  /* Estilo dos itens da lista dentro da classe .icon-paragraph */
-  .icon-paragraph li {
+} 
+.icon-paragraph li {
     color: #000000;
     position: relative;
     padding-left: 20px;
     margin-top: 10px;
-  }
+}
   
-  /* Estilo do marcador dentro da classe .icon-paragraph */
-  .icon-paragraph li::before {
-    content: "\2022"; /* Código Unicode para o marcador de ponto (•) */
+.icon-paragraph li::before {
+    content: "\2022";
     position: absolute;
     left: 0;
-    color: #007bff; /* Cor do marcador */
-  }
+    color: #007bff;
+}
 .botao-fechar {
     display: block;
     width: 150px;
