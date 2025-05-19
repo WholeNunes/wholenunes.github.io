@@ -492,19 +492,19 @@ form .send-btn:hover{
     box-shadow: var(--text-neon-color);
 }
 .skill-bar .bar .html{
-    width: 70%;
+    width: 80%;
     animation: html 6s;
 }
 .skill-bar .bar .python{
-    width: 80%;
+    width: 100%;
     animation: python 2s;
 }
 .skill-bar .bar .css{
-    width: 40%;
+    width: 50%;
     animation: css 7s;
 }
 .skill-bar .bar .javascript{
-    width: 70%;
+    width: 80%;
     animation: javascript 4s;
 }
 .skill-bar .bar .flask{
@@ -512,7 +512,7 @@ form .send-btn:hover{
     animation: flask 3s;
 }
 .skill-bar .bar .mysql{
-    width: 65%;
+    width: 70%;
     animation: mysql 5s;
 }
 
@@ -726,7 +726,7 @@ form .send-btn:hover{
         width: 0%;
     }
     100%{
-        width: 70%;
+        width: 80%;
     }
 }
 @keyframes python{
