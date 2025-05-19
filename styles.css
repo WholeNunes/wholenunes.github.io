@@ -710,7 +710,7 @@ form .send-btn:hover{
         width: 0%;
     }
     100%{
-        width: 70%;
+        width: 90%;
     }
 }
 @keyframes css{
@@ -718,7 +718,7 @@ form .send-btn:hover{
         width: 0%;
     }
     100%{
-        width: 40%;
+        width: 50%;
     }
 }
 @keyframes javascript{
@@ -734,7 +734,7 @@ form .send-btn:hover{
         width: 0%;
     }
     100%{
-        width: 80%;
+        width: 100%;
     }
 }
 @keyframes mysql{
@@ -742,7 +742,7 @@ form .send-btn:hover{
         width: 0%;
     }
     100%{
-        width: 65%;
+        width: 70%;
     }
 }
 @keyframes flask{
